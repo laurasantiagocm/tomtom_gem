@@ -10,4 +10,6 @@ RUN bundle install
 
 COPY . .
 
-CMD ["./test.rb"]
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["./entrypoint.sh"]
