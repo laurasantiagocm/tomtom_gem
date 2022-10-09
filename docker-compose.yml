@@ -4,3 +4,4 @@ services:
     build: .
     volumes:
       - .:/tomtom_gem
+    command: /bin/sh -c bundle gem tomtom_gem
